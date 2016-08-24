@@ -24,6 +24,9 @@ UIConfig.saveButton:SetSize(140, 40);
 UIConfig.saveButton:SetText("Save");
 UIConfig.saveButton:SetNormalFontObject("GameFontNormalLarge");
 UIConfig.saveButton:SetHighlightFontObject("GameFontHighlightLarge");
+UIConfig.saveButton:SetScript("OnClick", function()
+                      message("This will eventually be a Save Button :)")
+                    end)
 
 --RESET BUTTON
 UIConfig.resetButton = CreateFrame("Button", nil, UIConfig, "GameMenuButtonTemplate");
@@ -32,6 +35,9 @@ UIConfig.resetButton:SetSize(140, 40);
 UIConfig.resetButton:SetText("Reset");
 UIConfig.resetButton:SetNormalFontObject("GameFontNormalLarge");
 UIConfig.resetButton:SetHighlightFontObject("GameFontHighlightLarge");
+UIConfig.resetButton:SetScript("OnClick", function()
+                      message("RESET BUTTON MAYBE?")
+                    end)
 
 --LOAD BUTTON
 UIConfig.loadButton = CreateFrame("Button", nil, UIConfig, "GameMenuButtonTemplate");
@@ -40,6 +46,9 @@ UIConfig.loadButton:SetSize(140, 40);
 UIConfig.loadButton:SetText("Load");
 UIConfig.loadButton:SetNormalFontObject("GameFontNormalLarge");
 UIConfig.loadButton:SetHighlightFontObject("GameFontHighlightLarge");
+UIConfig.loadButton:SetScript("OnClick", function()
+                      message("WHAT IS LOAD?")
+                    end)
 
 --SLIDER
 UIConfig.slider1 = CreateFrame("Slider", nil, UIConfig, "OptionsSliderTemplate");
